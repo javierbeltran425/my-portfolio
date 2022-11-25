@@ -1,23 +1,38 @@
-import logo from './logo.svg';
+import { ReactQueryDevtools } from "react-query/devtools";
+import { QueryClient, QueryClientProvider, useQuery } from "react-query";
 import './App.css';
+
+import "primereact/resources/themes/bootstrap4-dark-purple/theme.css";  //theme
+import "primereact/resources/primereact.min.css";                  //core css
+import "primeicons/primeicons.css";   
+import "/node_modules/primeflex/primeflex.css"
+
+import Navbar from "./components/navbar";
+import Sidebar from "./components/sidebar";
+import Home from "./components/home";
+import About from "./components/about";
+import Whatdo from "./components/whatdo";
+import Porfolio from "./components/porfolio";
+import Resume from "./components/resume";
+import Contact from "./components/contact";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex flex-column w-full" >
+      <QueryClientProvider client={queryClient}>
+        <Navbar />
+        <Sidebar />
+        <Home />
+        <About />
+        <Whatdo />
+        <Porfolio />
+        <Resume />
+        <Contact />
+
+      <ReactQueryDevtools initialIsOpen={false} />
+      </QueryClientProvider>
     </div>
   );
 }
