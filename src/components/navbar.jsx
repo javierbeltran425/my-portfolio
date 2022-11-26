@@ -102,7 +102,7 @@ const Navbar = () => {
             <img src={logo} className='w-3rem md:w-5rem h-3rem md:h-5rem my-2 cursor-pointer' alt="logo" />
         </a>
         <Menu model={items} popup ref={menu} id="popup_menu" />
-        <i className="pi pi-bars" onClick={(event) => menu.current.toggle(event)} aria-controls="popup_menu" aria-haspopup></i>
+        <i className="pi pi-bars md:hidden" onClick={(event) => menu.current.toggle(event)} aria-controls="popup_menu" aria-haspopup></i>
         <ul className='list-none hidden md:flex flex-row align-items-center'>
             {englishItems.map(item => (
                 <li key={item.label} className="px-1 mx-2" >
