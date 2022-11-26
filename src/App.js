@@ -15,6 +15,7 @@ import Whatdo from "./components/whatdo";
 import Porfolio from "./components/porfolio";
 import Resume from "./components/resume";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 const queryClient = new QueryClient();
 
@@ -30,6 +31,7 @@ function App() {
         <Porfolio />
         <Resume />
         <Contact />
+        <Footer />
 
       <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>

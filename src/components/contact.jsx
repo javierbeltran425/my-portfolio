@@ -11,7 +11,7 @@ const Contact = () => {
     const [message, setMessage] = useState('');
 
     return (
-        <div id="contact" className='flex flex-row h-screen bg-black-alpha-90'>
+        <div id="contact" className='flex flex-row min-h-screen bg-black-alpha-90'>
             <div className='w-full' style={{ paddingLeft: "10%" }}>
                 <h1 className='text-white pt-8' >Contact Me</h1>
                 <div className='w-1 bg-red-600 mb-4' style={{ height: "1px" }} />
