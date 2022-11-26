@@ -5,8 +5,8 @@ import background from "../selfie.jpg";
 const home = () => {
   return (
     <div id="home" className='flex flex-column justify-content-center h-screen bg-cover' style={{ backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat' }}>
-        <div style={{ paddingLeft: "10rem" }}>
-            <h1 className='text-red-600' >I'm Javier Beltrán</h1>
+        <div style={{ paddingLeft: "10%" }}>
+            <h1 className='text-red-600' >Here is Javier Beltrán</h1>
             <h2 className='text-white'>Software developer & Web Developer</h2>
         </div>
 
