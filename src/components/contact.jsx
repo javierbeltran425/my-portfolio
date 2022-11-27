@@ -7,7 +7,6 @@ import { Toast } from 'primereact/toast';
 
 import { sendemail } from '../services/sendemailService';
 
-
 const Contact = () => {
     const toast = useRef(null);
     const [name, setName] = useState('');
